@@ -53,11 +53,6 @@ body {
     font-size: 1rem;
 }
 
-#todoInput:focus {
-    outline: none;
-    border-color: #7c3aed;
-}
-
 button {
     background: #7c3aed;
     color: white;
@@ -80,4 +75,46 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.task-el{
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 
+                0 0 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.task-el:hover{
+    border-color: #E5CEFF;
+    
+}
+
+#text-el{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#deleteTaskBtn{
+    position: absolute; 
+    right: 10px;
+    background-color: #ffffff;
+}
+
+#deleteTaskBtn img{
+    display: block;
+    height: 15px;
+    width: 15px;
+}
+
+.task-el{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
